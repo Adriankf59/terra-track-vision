@@ -2,7 +2,7 @@
 import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { map-pin, calendar, user, settings } from 'lucide-react';
+import { MapPin, Calendar, User, Settings } from 'lucide-react';
 
 const Dashboard = () => {
   const vehicles = [
@@ -12,10 +12,10 @@ const Dashboard = () => {
   ];
 
   const stats = [
-    { title: 'Total Kendaraan', value: '12', icon: settings },
-    { title: 'Aktif Hari Ini', value: '8', icon: calendar },
-    { title: 'Rata-rata Kecepatan', value: '42 km/h', icon: map-pin },
-    { title: 'Peringatan', value: '3', icon: user },
+    { title: 'Total Kendaraan', value: '12', icon: Settings },
+    { title: 'Aktif Hari Ini', value: '8', icon: Calendar },
+    { title: 'Rata-rata Kecepatan', value: '42 km/h', icon: MapPin },
+    { title: 'Peringatan', value: '3', icon: User },
   ];
 
   return (
@@ -52,7 +52,7 @@ const Dashboard = () => {
           <Card className="lg:col-span-2">
             <CardHeader>
               <CardTitle className="flex items-center space-x-2">
-                <map-pin className="w-5 h-5" />
+                <MapPin className="w-5 h-5" />
                 <span>Peta Real-time</span>
               </CardTitle>
               <CardDescription>
@@ -62,7 +62,7 @@ const Dashboard = () => {
             <CardContent>
               <div className="h-96 bg-gradient-to-br from-blue-50 to-emerald-50 rounded-lg flex items-center justify-center border-2 border-dashed border-gray-300">
                 <div className="text-center">
-                  <map-pin className="w-16 h-16 text-gray-400 mx-auto mb-4" />
+                  <MapPin className="w-16 h-16 text-gray-400 mx-auto mb-4" />
                   <p className="text-gray-500 text-lg">Peta Interaktif</p>
                   <p className="text-gray-400">Akan menampilkan lokasi real-time kendaraan</p>
                 </div>

@@ -3,27 +3,27 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { map-pin, shield, settings, bell } from 'lucide-react';
+import { MapPin, Shield, Settings, Bell } from 'lucide-react';
 
 const Homepage = () => {
   const features = [
     {
-      icon: map-pin,
+      icon: MapPin,
       title: 'Pelacakan Real-time',
       description: 'Pantau lokasi kendaraan Anda secara langsung dengan akurasi tinggi'
     },
     {
-      icon: shield,
+      icon: Shield,
       title: 'Keamanan Terjamin',
       description: 'Sistem keamanan berlapis dengan enkripsi data end-to-end'
     },
     {
-      icon: settings,
+      icon: Settings,
       title: 'Kontrol Remote',
       description: 'Matikan mesin dan kontrol kendaraan dari jarak jauh'
     },
     {
-      icon: bell,
+      icon: Bell,
       title: 'Notifikasi Cerdas',
       description: 'Dapatkan peringatan instant untuk aktivitas mencurigakan'
     }

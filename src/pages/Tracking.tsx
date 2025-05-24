@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { map-pin, calendar, arrow-right } from 'lucide-react';
+import { MapPin, Calendar, ArrowRight } from 'lucide-react';
 
 const Tracking = () => {
   const [selectedVehicle, setSelectedVehicle] = useState('');
@@ -53,7 +53,7 @@ const Tracking = () => {
                 </SelectContent>
               </Select>
               <Button disabled={!selectedVehicle}>
-                <map-pin className="w-4 h-4 mr-2" />
+                <MapPin className="w-4 h-4 mr-2" />
                 Mulai Pelacakan
               </Button>
             </div>
@@ -65,14 +65,14 @@ const Tracking = () => {
           <Card className="lg:col-span-2">
             <CardHeader>
               <CardTitle className="flex items-center space-x-2">
-                <map-pin className="w-5 h-5" />
+                <MapPin className="w-5 h-5" />
                 <span>Lokasi Real-time</span>
               </CardTitle>
             </CardHeader>
             <CardContent>
               <div className="h-96 bg-gradient-to-br from-blue-50 to-emerald-50 rounded-lg flex items-center justify-center border-2 border-dashed border-gray-300 mb-6">
                 <div className="text-center">
-                  <map-pin className="w-16 h-16 text-gray-400 mx-auto mb-4" />
+                  <MapPin className="w-16 h-16 text-gray-400 mx-auto mb-4" />
                   <p className="text-gray-500 text-lg">Peta Pelacakan</p>
                   <p className="text-gray-400">Menampilkan rute dan lokasi real-time</p>
                 </div>
@@ -81,15 +81,15 @@ const Tracking = () => {
               {/* Route Controls */}
               <div className="flex flex-wrap gap-2">
                 <Button variant="outline" size="sm">
-                  <calendar className="w-4 h-4 mr-2" />
+                  <Calendar className="w-4 h-4 mr-2" />
                   Riwayat Hari Ini
                 </Button>
                 <Button variant="outline" size="sm">
-                  <calendar className="w-4 h-4 mr-2" />
+                  <Calendar className="w-4 h-4 mr-2" />
                   7 Hari Terakhir
                 </Button>
                 <Button variant="outline" size="sm">
-                  <calendar className="w-4 h-4 mr-2" />
+                  <Calendar className="w-4 h-4 mr-2" />
                   Custom Range
                 </Button>
               </div>
@@ -139,11 +139,11 @@ const Tracking = () => {
               </CardHeader>
               <CardContent className="space-y-3">
                 <Button className="w-full" variant="outline">
-                  <map-pin className="w-4 h-4 mr-2" />
+                  <MapPin className="w-4 h-4 mr-2" />
                   Bagikan Lokasi
                 </Button>
                 <Button className="w-full" variant="outline">
-                  <calendar className="w-4 h-4 mr-2" />
+                  <Calendar className="w-4 h-4 mr-2" />
                   Unduh Riwayat
                 </Button>
                 <Button className="w-full bg-red-500 hover:bg-red-600 text-white">

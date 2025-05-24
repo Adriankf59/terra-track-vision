@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 import { Label } from '@/components/ui/label';
-import { settings, circle-plus, map-pin } from 'lucide-react';
+import { Settings, PlusCircle, MapPin } from 'lucide-react';
 
 const Vehicles = () => {
   const [vehicles, setVehicles] = useState([
@@ -70,7 +70,7 @@ const Vehicles = () => {
           <Dialog>
             <DialogTrigger asChild>
               <Button className="bg-gradient-to-r from-cyan-500 to-emerald-500 hover:from-cyan-600 hover:to-emerald-600">
-                <circle-plus className="w-4 h-4 mr-2" />
+                <PlusCircle className="w-4 h-4 mr-2" />
                 Tambah Kendaraan
               </Button>
             </DialogTrigger>
@@ -166,11 +166,11 @@ const Vehicles = () => {
                   
                   <div className="flex gap-2 pt-3">
                     <Button size="sm" variant="outline" className="flex-1">
-                      <map-pin className="w-4 h-4 mr-1" />
+                      <MapPin className="w-4 h-4 mr-1" />
                       Lacak
                     </Button>
                     <Button size="sm" variant="outline" className="flex-1">
-                      <settings className="w-4 h-4 mr-1" />
+                      <Settings className="w-4 h-4 mr-1" />
                       Edit
                     </Button>
                   </div>

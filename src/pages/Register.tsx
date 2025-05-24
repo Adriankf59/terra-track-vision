@@ -5,7 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import { map-pin, user } from 'lucide-react';
+import { MapPin, User } from 'lucide-react';
 
 const Register = () => {
   const [formData, setFormData] = useState({
@@ -29,7 +29,7 @@ const Register = () => {
         <div className="text-center mb-8">
           <Link to="/" className="inline-flex items-center space-x-2">
             <div className="w-12 h-12 bg-gradient-to-br from-cyan-500 to-emerald-500 rounded-lg flex items-center justify-center">
-              <map-pin className="w-7 h-7 text-white" />
+              <MapPin className="w-7 h-7 text-white" />
             </div>
             <span className="text-2xl font-bold bg-gradient-to-r from-cyan-600 to-emerald-600 bg-clip-text text-transparent">
               GPS Tracker
@@ -104,7 +104,7 @@ const Register = () => {
               </div>
 
               <Button type="submit" className="w-full bg-gradient-to-r from-cyan-500 to-emerald-500 hover:from-cyan-600 hover:to-emerald-600">
-                <user className="w-4 h-4 mr-2" />
+                <User className="w-4 h-4 mr-2" />
                 Daftar Sekarang
               </Button>
             </form>

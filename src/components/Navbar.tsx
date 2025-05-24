@@ -2,16 +2,16 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { map-pin, settings, user, log-in } from 'lucide-react';
+import { MapPin, Settings, User, LogIn } from 'lucide-react';
 
 const Navbar = () => {
   const location = useLocation();
 
   const navItems = [
-    { name: 'Beranda', path: '/', icon: map-pin },
-    { name: 'Dashboard', path: '/dashboard', icon: settings },
-    { name: 'Pelacakan', path: '/tracking', icon: map-pin },
-    { name: 'Kendaraan', path: '/vehicles', icon: settings },
+    { name: 'Beranda', path: '/', icon: MapPin },
+    { name: 'Dashboard', path: '/dashboard', icon: Settings },
+    { name: 'Pelacakan', path: '/tracking', icon: MapPin },
+    { name: 'Kendaraan', path: '/vehicles', icon: Settings },
   ];
 
   return (
@@ -22,7 +22,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-gradient-to-br from-cyan-500 to-emerald-500 rounded-lg flex items-center justify-center">
-                <map-pin className="w-5 h-5 text-white" />
+                <MapPin className="w-5 h-5 text-white" />
               </div>
               <span className="text-xl font-bold bg-gradient-to-r from-cyan-600 to-emerald-600 bg-clip-text text-transparent">
                 GPS Tracker
@@ -55,7 +55,7 @@ const Navbar = () => {
           <div className="flex items-center space-x-4">
             <Button variant="ghost" size="sm" asChild>
               <Link to="/login" className="flex items-center space-x-1">
-                <log-in className="w-4 h-4" />
+                <LogIn className="w-4 h-4" />
                 <span>Masuk</span>
               </Link>
             </Button>
